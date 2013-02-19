@@ -28,6 +28,10 @@
 	<array>
 		<string>armv7</string>
 	</array>
+	<key>X-ManagedObjectModelFileName</key>
+	<string>ManagedObjectModel.momd</string>
+	<key>X-PersistentStoreFileName</key>
+	<string>PersistentStore.sqlite3</string>
 	<key>UISupportedInterfaceOrientations</key>
 	<array>
 		<string>UIInterfaceOrientationPortrait</string>

@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		EB55DC8516D227C600D36811 /* ManagedObjectModel.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = EB55DC8316D227C600D36811 /* ManagedObjectModel.xcdatamodeld */; };
 		EB8216F716D0EF7000734A05 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EB8216F616D0EF7000734A05 /* UIKit.framework */; };
 		EB8216F916D0EF7000734A05 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EB8216F816D0EF7000734A05 /* Foundation.framework */; };
 		EB8216FB16D0EF7000734A05 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EB8216FA16D0EF7000734A05 /* CoreGraphics.framework */; };
@@ -16,9 +17,11 @@
 		EB82170916D0EF7000734A05 /* Default.png in Resources */ = {isa = PBXBuildFile; fileRef = EB82170816D0EF7000734A05 /* Default.png */; };
 		EB82170B16D0EF7000734A05 /* Default@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = EB82170A16D0EF7000734A05 /* Default@2x.png */; };
 		EB82170D16D0EF7000734A05 /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = EB82170C16D0EF7000734A05 /* Default-568h@2x.png */; };
+		EBC8551916D20D9000E8A2CF /* CoreData.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EBC8551816D20D9000E8A2CF /* CoreData.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		EB55DC8416D227C600D36811 /* ManagedObjectModel.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = ManagedObjectModel.xcdatamodel; sourceTree = "<group>"; };
 		EB8216F316D0EF7000734A05 /* BasicIOSProjectWithCoreData.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BasicIOSProjectWithCoreData.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		EB8216F616D0EF7000734A05 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		EB8216F816D0EF7000734A05 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
@@ -32,6 +35,7 @@
 		EB82170816D0EF7000734A05 /* Default.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Default.png; sourceTree = "<group>"; };
 		EB82170A16D0EF7000734A05 /* Default@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default@2x.png"; sourceTree = "<group>"; };
 		EB82170C16D0EF7000734A05 /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
+		EBC8551816D20D9000E8A2CF /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = System/Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -39,6 +43,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				EBC8551916D20D9000E8A2CF /* CoreData.framework in Frameworks */,
 				EB8216F716D0EF7000734A05 /* UIKit.framework in Frameworks */,
 				EB8216F916D0EF7000734A05 /* Foundation.framework in Frameworks */,
 				EB8216FB16D0EF7000734A05 /* CoreGraphics.framework in Frameworks */,
@@ -51,6 +56,7 @@
 		EB8216EA16D0EF7000734A05 = {
 			isa = PBXGroup;
 			children = (
+				EB55DC8316D227C600D36811 /* ManagedObjectModel.xcdatamodeld */,
 				EB8216FC16D0EF7000734A05 /* BasicIOSProjectWithCoreData */,
 				EB8216F516D0EF7000734A05 /* Frameworks */,
 				EB8216F416D0EF7000734A05 /* Products */,
@@ -68,6 +74,7 @@
 		EB8216F516D0EF7000734A05 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				EBC8551816D20D9000E8A2CF /* CoreData.framework */,
 				EB8216F616D0EF7000734A05 /* UIKit.framework */,
 				EB8216F816D0EF7000734A05 /* Foundation.framework */,
 				EB8216FA16D0EF7000734A05 /* CoreGraphics.framework */,
@@ -166,6 +173,7 @@
 			files = (
 				EB82170316D0EF7000734A05 /* main.m in Sources */,
 				EB82170716D0EF7000734A05 /* AppDelegate.m in Sources */,
+				EB55DC8516D227C600D36811 /* ManagedObjectModel.xcdatamodeld in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -280,8 +288,22 @@
 				EB82171216D0EF7000734A05 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		EB55DC8316D227C600D36811 /* ManagedObjectModel.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				EB55DC8416D227C600D36811 /* ManagedObjectModel.xcdatamodel */,
+			);
+			currentVersion = EB55DC8416D227C600D36811 /* ManagedObjectModel.xcdatamodel */;
+			path = ManagedObjectModel.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
 	};
 	rootObject = EB8216EB16D0EF7000734A05 /* Project object */;
 }
