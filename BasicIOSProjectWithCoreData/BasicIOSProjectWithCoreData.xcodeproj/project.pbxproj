@@ -10,8 +10,8 @@
 		EB55DC8516D227C600D36811 /* ManagedObjectModel.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = EB55DC8316D227C600D36811 /* ManagedObjectModel.xcdatamodeld */; };
 		EB55DC9016D35C5C00D36811 /* TaskViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = EB55DC8E16D35C5B00D36811 /* TaskViewController.m */; };
 		EB55DC9116D35C5C00D36811 /* TaskViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = EB55DC8F16D35C5B00D36811 /* TaskViewController.xib */; };
-		EB55DC9616D35EE200D36811 /* Task.m in Sources */ = {isa = PBXBuildFile; fileRef = EB55DC9316D35EE200D36811 /* Task.m */; };
-		EB55DC9716D35EE200D36811 /* Task+Control.m in Sources */ = {isa = PBXBuildFile; fileRef = EB55DC9516D35EE200D36811 /* Task+Control.m */; };
+		EB55DC9616D35EE200D36811 /* TaskEntity.m in Sources */ = {isa = PBXBuildFile; fileRef = EB55DC9316D35EE200D36811 /* TaskEntity.m */; };
+		EB55DC9716D35EE200D36811 /* TaskEntity+Control.m in Sources */ = {isa = PBXBuildFile; fileRef = EB55DC9516D35EE200D36811 /* TaskEntity+Control.m */; };
 		EB8216F716D0EF7000734A05 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EB8216F616D0EF7000734A05 /* UIKit.framework */; };
 		EB8216F916D0EF7000734A05 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EB8216F816D0EF7000734A05 /* Foundation.framework */; };
 		EB8216FB16D0EF7000734A05 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EB8216FA16D0EF7000734A05 /* CoreGraphics.framework */; };
@@ -29,10 +29,10 @@
 		EB55DC8D16D35C5B00D36811 /* TaskViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TaskViewController.h; sourceTree = "<group>"; };
 		EB55DC8E16D35C5B00D36811 /* TaskViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TaskViewController.m; sourceTree = "<group>"; };
 		EB55DC8F16D35C5B00D36811 /* TaskViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = TaskViewController.xib; sourceTree = "<group>"; };
-		EB55DC9216D35EE200D36811 /* Task.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Task.h; sourceTree = "<group>"; };
-		EB55DC9316D35EE200D36811 /* Task.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Task.m; sourceTree = "<group>"; };
-		EB55DC9416D35EE200D36811 /* Task+Control.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "Task+Control.h"; sourceTree = "<group>"; };
-		EB55DC9516D35EE200D36811 /* Task+Control.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "Task+Control.m"; sourceTree = "<group>"; };
+		EB55DC9216D35EE200D36811 /* TaskEntity.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TaskEntity.h; sourceTree = "<group>"; };
+		EB55DC9316D35EE200D36811 /* TaskEntity.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TaskEntity.m; sourceTree = "<group>"; };
+		EB55DC9416D35EE200D36811 /* TaskEntity+Control.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "TaskEntity+Control.h"; sourceTree = "<group>"; };
+		EB55DC9516D35EE200D36811 /* TaskEntity+Control.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "TaskEntity+Control.m"; sourceTree = "<group>"; };
 		EB8216F316D0EF7000734A05 /* BasicIOSProjectWithCoreData.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BasicIOSProjectWithCoreData.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		EB8216F616D0EF7000734A05 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		EB8216F816D0EF7000734A05 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
@@ -67,10 +67,10 @@
 		EB55DC9816D35EEC00D36811 /* Entities */ = {
 			isa = PBXGroup;
 			children = (
-				EB55DC9216D35EE200D36811 /* Task.h */,
-				EB55DC9316D35EE200D36811 /* Task.m */,
-				EB55DC9416D35EE200D36811 /* Task+Control.h */,
-				EB55DC9516D35EE200D36811 /* Task+Control.m */,
+				EB55DC9216D35EE200D36811 /* TaskEntity.h */,
+				EB55DC9316D35EE200D36811 /* TaskEntity.m */,
+				EB55DC9416D35EE200D36811 /* TaskEntity+Control.h */,
+				EB55DC9516D35EE200D36811 /* TaskEntity+Control.m */,
 			);
 			name = Entities;
 			sourceTree = "<group>";
@@ -202,8 +202,8 @@
 				EB82170716D0EF7000734A05 /* AppDelegate.m in Sources */,
 				EB55DC8516D227C600D36811 /* ManagedObjectModel.xcdatamodeld in Sources */,
 				EB55DC9016D35C5C00D36811 /* TaskViewController.m in Sources */,
-				EB55DC9616D35EE200D36811 /* Task.m in Sources */,
-				EB55DC9716D35EE200D36811 /* Task+Control.m in Sources */,
+				EB55DC9616D35EE200D36811 /* TaskEntity.m in Sources */,
+				EB55DC9716D35EE200D36811 /* TaskEntity+Control.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
