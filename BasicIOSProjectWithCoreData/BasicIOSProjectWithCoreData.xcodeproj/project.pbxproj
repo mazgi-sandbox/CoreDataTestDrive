@@ -8,6 +8,8 @@
 
 /* Begin PBXBuildFile section */
 		EB55DC8516D227C600D36811 /* ManagedObjectModel.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = EB55DC8316D227C600D36811 /* ManagedObjectModel.xcdatamodeld */; };
+		EB55DC9016D35C5C00D36811 /* TaskViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = EB55DC8E16D35C5B00D36811 /* TaskViewController.m */; };
+		EB55DC9116D35C5C00D36811 /* TaskViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = EB55DC8F16D35C5B00D36811 /* TaskViewController.xib */; };
 		EB8216F716D0EF7000734A05 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EB8216F616D0EF7000734A05 /* UIKit.framework */; };
 		EB8216F916D0EF7000734A05 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EB8216F816D0EF7000734A05 /* Foundation.framework */; };
 		EB8216FB16D0EF7000734A05 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EB8216FA16D0EF7000734A05 /* CoreGraphics.framework */; };
@@ -22,6 +24,9 @@
 
 /* Begin PBXFileReference section */
 		EB55DC8416D227C600D36811 /* ManagedObjectModel.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = ManagedObjectModel.xcdatamodel; sourceTree = "<group>"; };
+		EB55DC8D16D35C5B00D36811 /* TaskViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TaskViewController.h; sourceTree = "<group>"; };
+		EB55DC8E16D35C5B00D36811 /* TaskViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TaskViewController.m; sourceTree = "<group>"; };
+		EB55DC8F16D35C5B00D36811 /* TaskViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = TaskViewController.xib; sourceTree = "<group>"; };
 		EB8216F316D0EF7000734A05 /* BasicIOSProjectWithCoreData.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BasicIOSProjectWithCoreData.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		EB8216F616D0EF7000734A05 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		EB8216F816D0EF7000734A05 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
@@ -88,6 +93,9 @@
 				EB82170516D0EF7000734A05 /* AppDelegate.h */,
 				EB82170616D0EF7000734A05 /* AppDelegate.m */,
 				EB8216FD16D0EF7000734A05 /* Supporting Files */,
+				EB55DC8D16D35C5B00D36811 /* TaskViewController.h */,
+				EB55DC8E16D35C5B00D36811 /* TaskViewController.m */,
+				EB55DC8F16D35C5B00D36811 /* TaskViewController.xib */,
 			);
 			path = BasicIOSProjectWithCoreData;
 			sourceTree = "<group>";
@@ -161,6 +169,7 @@
 				EB82170916D0EF7000734A05 /* Default.png in Resources */,
 				EB82170B16D0EF7000734A05 /* Default@2x.png in Resources */,
 				EB82170D16D0EF7000734A05 /* Default-568h@2x.png in Resources */,
+				EB55DC9116D35C5C00D36811 /* TaskViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -174,6 +183,7 @@
 				EB82170316D0EF7000734A05 /* main.m in Sources */,
 				EB82170716D0EF7000734A05 /* AppDelegate.m in Sources */,
 				EB55DC8516D227C600D36811 /* ManagedObjectModel.xcdatamodeld in Sources */,
+				EB55DC9016D35C5C00D36811 /* TaskViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

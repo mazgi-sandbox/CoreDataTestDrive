@@ -7,6 +7,7 @@
 //
 
 #import "AppDelegate.h"
+#import "TaskViewController.h"
 
 static NSString * const kManagedObjectModelFileNameKey = @"X-ManagedObjectModelFileName";
 static NSString * const kPersistentStoreFileNameKey = @"X-PersistentStoreFileName";
@@ -19,8 +20,9 @@ static NSString * const kPersistentStoreFileNameKey = @"X-PersistentStoreFileNam
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
     self.window = [[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]];
-    // Override point for customization after application launch.
-    self.window.backgroundColor = [UIColor whiteColor];
+    UIViewController *rootViewController = [[TaskViewController alloc]initWithNibName:nil bundle:nil];
+    UINavigationController *navigationController = [[UINavigationController alloc]initWithRootViewController:rootViewController];
+    self.window.rootViewController = navigationController;
     [self.window makeKeyAndVisible];
     return YES;
 }
