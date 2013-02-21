@@ -21,8 +21,7 @@ static NSString * const kPersistentStoreFileNameKey = @"X-PersistentStoreFileNam
 {
     self.window = [[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]];
     UIViewController *rootViewController = [[TaskViewController alloc]initWithNibName:nil bundle:nil];
-    UINavigationController *navigationController = [[UINavigationController alloc]initWithRootViewController:rootViewController];
-    self.window.rootViewController = navigationController;
+    self.window.rootViewController = rootViewController;
     [self.window makeKeyAndVisible];
     return YES;
 }
